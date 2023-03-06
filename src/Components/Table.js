@@ -59,14 +59,14 @@ const Table = () => {
 
   const sortHandler = (order, colName) => {
     const Tempdata = [...Items];
-    if (order == "asc") {
+    if (order === "asc") {
       const sortedData = Tempdata.sort((a, b) =>
         a[colName].localeCompare(b[colName])
       );
       setData(sortedData);
       setCollection(sortedData.slice(0, countPerPage));
     }
-    if (order == "desc") {
+    if (order === "desc") {
       const sortedData = Tempdata.sort((a, b) =>
         b[colName].localeCompare(a[colName])
       );
