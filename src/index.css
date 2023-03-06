@@ -7,7 +7,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.search-bar{
+  width: 100%;
+  background-color: #072a38;
+  padding: 25px 0px;
+}
+
+.table-wrapper {
+  height: 100vh; 
+}
+
+
+.searchTerm {
+  border: 3px solid white;
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+}
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	margin:0px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #072a38; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+.pagination-wrapper {
+  margin: 20px;
+  display: flex;
+  justify-content: end;
+}
+.filter-col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.remove-button{
+	border: none;
+	background-color: red;
+	padding: 3px 10px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin: 0px 12px;
+}
+.no-record{
+	text-align: center;
+	color: gray;
+
 }
